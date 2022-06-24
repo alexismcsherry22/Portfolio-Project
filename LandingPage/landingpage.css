@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid black;
+}
+.header__h1 {
+  font-size: 40px;
+  margin: 0px;
+}
+.header__para {
+  font-size: 20px;
+  text-align: center;
+}
