@@ -1,0 +1,16 @@
+.header
+{
+  font-family: Arial, Helvetica, sans-serif;
+  &__section
+  {
+    border: 2px solid black;
+  }
+  &__h1
+  {
+    font-size: 40px;
+  }
+  &__h2 
+  {
+    font-size: 20px;
+  }
+}
