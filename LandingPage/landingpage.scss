@@ -44,3 +44,12 @@ body
     }
   }
 }
+
+.block
+{
+  background-color: rgb(17, 45, 78);
+  &__section
+  {
+    background-color: rgb(63, 114, 175);
+  }
+}
