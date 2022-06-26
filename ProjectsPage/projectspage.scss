@@ -1,0 +1,28 @@
+.project
+{
+  display: flex;
+  flex-wrap: wrap;
+
+  &__section
+  {
+    background-color: rgb(63, 114, 175);
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--image
+    {
+      height: 150px;
+      margin-right: 50px;
+    }
+    &--header
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+    }
+  }
+}

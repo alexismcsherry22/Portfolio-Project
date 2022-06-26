@@ -1,0 +1,22 @@
+.project {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project__section {
+  background-color: rgb(63, 114, 175);
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project__section--image {
+  height: 150px;
+  margin-right: 50px;
+}
+.project__section--header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
