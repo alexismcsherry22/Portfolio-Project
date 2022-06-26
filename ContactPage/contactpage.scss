@@ -1,0 +1,15 @@
+.contact
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(63, 114, 175);
+  margin-top: 10px;
+
+  &__text
+  {
+    margin: 10px;
+    
+  }
+}
