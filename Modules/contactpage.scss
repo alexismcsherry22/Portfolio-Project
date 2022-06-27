@@ -1,10 +1,13 @@
+//Partials
+@use "../Partials/palette";
+
 .contact
 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(63, 114, 175);
+  background-color: palette.$section-background-color;
   margin-top: 10px;
 
   &__text

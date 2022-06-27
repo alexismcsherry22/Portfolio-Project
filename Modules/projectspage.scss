@@ -1,3 +1,6 @@
+//Partials
+@use "../Partials/palette";
+
 .project
 {
   display: flex;
@@ -5,7 +8,7 @@
 
   &__section
   {
-    background-color: rgb(63, 114, 175);
+    background-color: palette.$section-background-color;
     width: 100%;
     padding: 5px;
     margin-top: 10px;

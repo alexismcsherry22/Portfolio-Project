@@ -1,8 +1,13 @@
+//Partials
+@use "../Partials/palette";
+
 .block
 {
+  display: flex;
+  flex-direction: column;
   &__section
   {
-    background-color: rgb(63, 114, 175);
+    background-color: palette.$section-background-color;
     height: 100px;
 
     &--header 
