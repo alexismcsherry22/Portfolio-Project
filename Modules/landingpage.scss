@@ -8,15 +8,39 @@
   &__section
   {
     background-color: palette.$section-background-color;
-    height: 100px;
+    margin-top: 20px;
 
-    &--header 
+    //iphone xr screen
+    @media only screen and (max-width: 400px)
     {
-      margin: 5px;
+      &--header {
+        margin: 5px;
+        font-size: 12px;
+      }
     }
-    &--para
+    @media only screen and (min-width: 401px) and (max-width: 600px) 
     {
-      padding: 5px;
+      &--header {
+        margin: 5px;
+        font-size: 20px;
+      }
     }
+    @media only screen and (min-width: 601px) and (max-width: 900px) 
+    {
+      &--header 
+      {
+        margin: 5px;
+        font-size: 35px;
+      }
+    }
+    @media only screen and (min-width: 901px) and (max-width: 1100px) 
+    {
+      &--header 
+      {
+        margin: 5px;
+        font-size: 50px;
+      }
+    }
+    
   }
 }
