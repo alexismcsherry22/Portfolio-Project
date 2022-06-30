@@ -41,12 +41,14 @@
 }
 .container__image {
   margin-top: 10px;
-  height: 150px;
-  width: 200px;
+  height: 50%;
+  width: 35%;
+  border: 2px solid black;
 }
 .container__header {
   margin-top: 5px;
   text-decoration: underline;
+  color: white;
 }
 
 .paragraph-box {
@@ -57,7 +59,10 @@
   margin-right: 10px;
 }
 .paragraph-box__para {
+  font-family: Arial;
+  font-size: 18px;
   text-align: left;
+  color: white;
 }
 
 .contact {
@@ -215,5 +220,6 @@ body {
   list-style-type: none;
 }
 .navigation__list--styling {
-  text-align: center;
+  font-family: Verdana;
+  font-size: 20px;
 }

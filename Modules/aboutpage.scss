@@ -1,4 +1,5 @@
 @use "../Partials/palette";
+@use "../Partials/typography";
 
 .container
 {
@@ -12,13 +13,15 @@
   &__image
   {
     margin-top: 10px;
-    height: 150px;
-    width: 200px;
+    height: 50%;
+    width: 35%;
+    border: 2px solid black;
   }
   &__header
   {
     margin-top: 5px;
     text-decoration: underline;
+    color: typography.$font-white;
   }
 }
 
@@ -31,6 +34,9 @@
   margin-right: 10px;
   &__para
   {
-    text-align: left;
+    font-family: typography.$para-font-family;
+    font-size: typography.$para-font-size;
+    text-align: typography.$para-align-left;
+    color: typography.$font-white;
   }
 }
