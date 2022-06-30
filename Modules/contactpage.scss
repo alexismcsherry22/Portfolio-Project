@@ -1,18 +1,22 @@
 //Partials
 @use "../Partials/palette";
+@use "../Partials/typography";
 
 .contact
 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   background-color: palette.$section-background-color;
-  margin-top: 10px;
+  margin-top: 15%;
+  border: 2px solid black;
 
   &__text
   {
     margin: 10px;
-    
+    font-family: typography.$para-font-family;
+    font-size: typography.$para-font-size;
+    text-align: typography.$para-align-left;
   }
 }

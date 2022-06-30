@@ -68,13 +68,17 @@
 .contact {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   background-color: rgb(63, 114, 175);
-  margin-top: 10px;
+  margin-top: 15%;
+  border: 2px solid black;
 }
 .contact__text {
   margin: 10px;
+  font-family: Arial;
+  font-size: 18px;
+  text-align: left;
 }
 
 .project {
@@ -88,6 +92,7 @@
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
+  text-align: left;
 }
 .project__section--image {
   height: 150px;
@@ -98,6 +103,11 @@
   justify-content: center;
   align-items: center;
   font-size: 30px;
+}
+.project__section--para {
+  font-family: Arial;
+  font-size: 18px;
+  text-align: left;
 }
 
 main {
@@ -222,4 +232,5 @@ body {
 .navigation__list--styling {
   font-family: Verdana;
   font-size: 20px;
+  font-weight: bold;
 }
