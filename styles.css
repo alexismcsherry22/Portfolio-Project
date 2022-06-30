@@ -97,17 +97,20 @@
 .project__section--image {
   height: 150px;
   margin-right: 50px;
+  border: 2px solid black;
 }
 .project__section--header {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  color: white;
 }
 .project__section--para {
   font-family: Arial;
   font-size: 18px;
   text-align: left;
+  color: white;
 }
 
 main {
