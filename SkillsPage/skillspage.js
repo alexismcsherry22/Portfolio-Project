@@ -1,5 +1,5 @@
-function skillPopup()
+function skillTextSwitch() 
 {
-  var popup = document.getElementById("popupId");
+  const popup = document.getElementById("pop-up");
   popup.classList.toggle("show");
 }
