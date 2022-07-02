@@ -40,82 +40,105 @@
 
   <main> 
     <section class="skills-grid">
-      <div class="skills-grid__item pop-up" onclick="skillTextSwitch()">
+      <div class="skills-grid__item">
         <img 
           class="skills-grid__image" 
           src="../Images/placeholderimage.png" alt ="placeholder1"> 
-          <p class="skills-grid__para">
-            Skill Name
-          </p>
+          <button 
+            class="skills-grid__btn"
+            id="skillOne"
+            onclick="skillTextSwitch(this.id)">
+            Skill One
+          </button>
       </div>
 
-      <div class="skills-grid__item pop-up" onclick="skillTextSwitch()">
+      <div class="skills-grid__item">
         <img class="skills-grid__image" src="../Images/placeholderimage.png" alt="placeholder1">
-        <p class="skills-grid__para">
-          Skill Name
-        </p>
+        <button 
+          class="skills-grid__btn"
+          id="skillTwo"
+          onclick="skillTextSwitch(this.id)">
+          Skill Two
+        </button>
       </div>
 
-      <div class="skills-grid__item pop-up" onclick="skillTextSwitch()">
+      <div class="skills-grid__item">
         <img class="skills-grid__image" src="../Images/placeholderimage.png" alt="placeholder1">
-        <p class="skills-grid__para">
-          Skill Name
-        </p>
+        <button 
+          class="skills-grid__btn"
+          id="skillThree"
+          onclick="skillTextSwitch(this.id)">
+          Skill Three
+        </button>
       </div>
 
-      <div class="skills-grid__item pop-up" onclick="skillTextSwitch()">
+      <div class="skills-grid__item">
         <img class="skills-grid__image" src="../Images/placeholderimage.png" alt="placeholder1">
-        <p class="skills-grid__para">
+        <button 
+          class="skills-grid__btn"
+          onclick="skillTextSwitch(this.id)">
           Skill Name
-        </p>
+        </button>
       </div>
 
-      <div class="skills-grid__item pop-up" onclick="skillTextSwitch()">
+      <div class="skills-grid__item">
         <img class="skills-grid__image" src="../Images/placeholderimage.png" alt="placeholder1">
-        <p class="skills-grid__para">
+        <button 
+          class="skills-grid__btn"
+          onclick="skillTextSwitch(this.id)">
           Skill Name
-        </p>
+        </button>
       </div>
 
-      <div class="skills-grid__item pop-up" onclick="skillTextSwitch()">
+      <div class="skills-grid__item">
         <img class="skills-grid__image" src="../Images/placeholderimage.png" alt="placeholder1">
-        <p class="skills-grid__para">
+        <button 
+          class="skills-grid__btn"
+          onclick="skillTextSwitch(this.id)">
           Skill Name
-        </p>
+        </button>
       </div>
 
-      <div class="skills-grid__item pop-up" onclick="skillTextSwitch()">
+      <div class="skills-grid__item">
         <img class="skills-grid__image" src="../Images/placeholderimage.png" alt="placeholder1">
-        <p class="skills-grid__para">
+        <button 
+          class="skills-grid__btn"
+          onclick="skillTextSwitch(this.id)">
           Skill Name
-        </p>
+        </button>
       </div>
 
-      <div class="skills-grid__item pop-up" onclick="skillTextSwitch()">
+      <div class="skills-grid__item">
         <img class="skills-grid__image" src="../Images/placeholderimage.png" alt="placeholder1">
-        <p class="skills-grid__para">
+        <button 
+          class="skills-grid__btn"
+          onclick="skillTextSwitch(this.id)">
           Skill Name
-        </p>
+        </button>
       </div>
       
-      <div class="skills-grid__item pop-up" onclick="skillTextSwitch()">
+      <div class="skills-grid__item">
         <img class="skills-grid__image" src="../Images/placeholderimage.png" alt="placeholder1">
-        <p class="skills-grid__para">
+        <button 
+          class="skills-grid__btn"
+          onclick="skillTextSwitch(this.id)">
           Skill Name
-        </p>
+        </button>
       </div>
     </section>
   </main>
 
   <article class="skill-description-box">
     <section class="skill-description-box__section">
-      <h2 id="skillHeader">
+      <h2 class="skill-description-box__section--header" id="skillHeader">
         Skill Name Header
       </h2>
-      <p id="skillParaDesc">
+      <p class="skill-description-box__section--para" id="skillDesc">
         Skill Description
       </p>
-      <p id="skillPara">Skill Example ConTEXT (most likely an image)</p>
+      <p class="skill-description-box__section--para" id="skillExample">
+        Skill Example ConTEXT (most likely an image)
+      </p>
     </section>
   </article>
 </body>
