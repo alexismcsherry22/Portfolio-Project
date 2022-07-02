@@ -114,17 +114,42 @@
   color: white;
 }
 
+@media only screen and (max-width: 400px) {
+  .skills-grid {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  .skills-grid {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    grid-gap: 10px;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 2000px) {
+  .skills-grid {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr auto;
+    grid-gap: 10px;
+  }
+}
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.skills-grid {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr auto;
-  grid-gap: 10px;
-}
 .skills-grid__image {
   height: 100px;
   width: 100px;
@@ -142,9 +167,7 @@ main {
   width: 100px;
   font-weight: bold;
   position: relative;
-  top: -4.2%;
-  left: -29%;
-  transform: translate(-50%, -50%);
+  transform: translate(-115%, -57%);
   background: none;
 }
 .skills-grid__btn:hover {

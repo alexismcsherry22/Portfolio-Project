@@ -29,3 +29,8 @@ function skillTextSwitch(id)
     example.innerHTML = "Nothing to see here.";
   }
 }
+
+function goToDescription()
+{
+  window.location.href ="SkillsPage.html#skillDesc";
+}
