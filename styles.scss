@@ -7,6 +7,8 @@
 @use "./Modules/projectspage.scss";
 @use "./Modules/skillspage.scss";
 
+//Update links e.g. remove underlines, change colour
+// add media queries for better screen sizing view
 body {
   background-color: palette.$primary-background-color;
   height: 100%;

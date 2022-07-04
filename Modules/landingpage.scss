@@ -2,6 +2,9 @@
 @use "../Partials/palette";
 @use "../Partials/typography";
 
+
+// fill screen more
+// change header content to more approriate position on page
 .block
 {
   display: flex;
@@ -35,12 +38,13 @@
         font-size: 35px;
       }
     }
-    @media only screen and (min-width: 901px) and (max-width: 1100px) 
+    @media only screen and (min-width: 901px) 
     {
       &--header 
       {
         margin: 5px;
         font-size: 50px;
+        //mess around with percentage e.g. font-size: 50%;
       }
     }
     
