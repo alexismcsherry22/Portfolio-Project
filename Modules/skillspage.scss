@@ -2,101 +2,100 @@
 @use "../Partials/palette";
 @use "../Partials/typography";
 
-@media only screen and (max-width: 400px)
-{
-  .skills-grid 
-  {
-    margin-top: 50px;
-    display: grid;
+main {
+    display: flex;
     justify-content: center;
     align-items: center;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
-  }
 }
-@media only screen and (min-width: 401px) and (max-width: 800px)
-{
-  .skills-grid 
-  {
+
+.skills-grid {
     margin-top: 50px;
     display: grid;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto auto auto;
+    flex-wrap: wrap;
     grid-gap: 10px;
-  }
-}
-@media only screen and (min-width: 801px) and (max-width: 2000px)
-{
-  .skills-grid
-  {
-    margin-top: 50px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr auto;
-    grid-gap: 10px;
-  }
-}
 
-main
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skills-grid
-{
-  &__image
-  {
-    height: 100px;
-    width: 100px;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgb(5, 162, 241);
-  }
-
-  &__image:hover
-  {
-    box-shadow: 0 8px 16px 0 rgb(255, 0, 0);
-    cursor: pointer;
-  }
-
-  &__btn 
-  {
-    height: 100px;
-    width: 100px;
-    font-weight: bold;
-    position: relative;
-    transform: translate(-115%, -57%);
-    background: none;
-  }
-  &__btn:hover
-  {
-    box-shadow: 0 8px 16px 0 rgb(255, 0, 0);
-    cursor: pointer;
-  }
-}
-
-.skill-description-box
-{
-  background-color: palette.$section-background-color;
-  
-  &__section
-  {
-    border: 2px solid black;
-    padding-left: 5px;
-    &--header
-    {
-      color: typography.$font-white;
+    &__image {
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgb(5, 162, 241);
     }
-    &--para
-    {
-      color: typography.$font-white;
-      font-family: typography.$para-font-family;
-      font-size: typography.$para-font-size;
+
+    &__image:hover {
+        box-shadow: 0 8px 16px 0 rgb(255, 0, 0);
+        cursor: pointer;
     }
-  }
+
+    &__btn {
+        height: 100px;
+        width: 100px;
+        font-weight: bold;
+        position: relative;
+        transform: translate(-115%, -16%);
+        background: none;
+    }
+    &__btn:hover {
+        box-shadow: 0 8px 16px 0 rgb(255, 0, 0);
+        cursor: pointer;
+    }
+}
+
+.skill-description-box {
+    background-color: palette.$section-background-color;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    margin: 4.5px;
+
+    &__section {
+        border: 2px solid white;
+        padding-left: 5px;
+        &--header {
+            color: typography.$font-white;
+        }
+        &--para {
+            color: typography.$font-white;
+            font-family: typography.$para-font-family;
+        }
+        @media only screen and (max-width: 400px) {
+            &--para {
+                font-size: typography.$para-small;
+            }
+            &--header {
+                font-size: typography.$header-small;
+            }
+        }
+
+        @media only screen and (min-width: 401px) and (max-width: 600px) {
+            &--para {
+                font-size: typography.$para-small-medium;
+            }
+            &--header {
+                font-size: typography.$header-small-medium;
+            }
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 900px) {
+            &--para {
+                font-size: typography.$para-medium;
+            }
+            &--header {
+                font-size: typography.$header-medium;
+            }
+        }
+
+        @media only screen and (min-width: 901px) {
+            &--para {
+                font-size: typography.$para-large;
+            }
+            &--header {
+                font-size: typography.$header-large;
+            }
+        }
+    }
 }

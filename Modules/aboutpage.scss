@@ -1,42 +1,83 @@
 @use "../Partials/palette";
 @use "../Partials/typography";
 
-.container
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: palette.$section-background-color;
-  margin-top: 10px;
-
-  &__image
-  {
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: palette.$section-background-color;
+    border: 3px solid white;
     margin-top: 10px;
-    height: 50%;
-    width: 35%;
-    border: 2px solid black;
-  }
-  &__header
-  {
-    margin-top: 5px;
-    text-decoration: underline;
-    color: typography.$font-white;
-  }
+
+    &__image {
+        margin-top: 10px;
+        height: 50%;
+        width: 35%;
+        border: 2px solid black;
+    }
+    &__header {
+        margin-top: 5px;
+        text-decoration: underline;
+        color: typography.$font-white;
+    }
+    @media only screen and (max-width: 400px) {
+        &__header {
+            font-size: typography.$header-small;
+        }
+    }
+
+    @media only screen and (min-width: 401px) and (max-width: 600px) {
+        &__header {
+            font-size: typography.$header-small-medium;
+        }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 900px) {
+        &__header {
+            font-size: typography.$header-medium;
+        }
+    }
+
+    @media only screen and (min-width: 901px) {
+        &__header {
+            font-size: typography.$header-large;
+        }
+    }
 }
 
-.paragraph-box
-{
-  display: flex;
-  align-self: flex-start;
-  flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
-  &__para
-  {
-    font-family: typography.$para-font-family;
-    font-size: typography.$para-font-size;
-    text-align: typography.$para-align-left;
-    color: typography.$font-white;
-  }
+.paragraph-box {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    &__para {
+        font-family: typography.$para-font-family;
+        text-align: typography.$para-align-left;
+        color: typography.$font-white;
+    }
+    @media only screen and (max-width: 400px) {
+        &__para {
+            font-size: typography.$para-small;
+        }
+    }
+
+    @media only screen and (min-width: 401px) and (max-width: 600px) {
+        &__para {
+            font-size: typography.$para-small-medium;
+        }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 900px) {
+        &__para {
+            font-size: typography.$para-medium;
+        }
+    }
+
+    @media only screen and (min-width: 901px) {
+        &__para {
+            font-size: typography.$para-large;
+        }
+    }
 }

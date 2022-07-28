@@ -14,6 +14,8 @@
     background-color: palette.$section-background-color;
     margin-top: 20px;
     color: typography.$font-white;
+    border: 3px solid white;
+    padding: 20px;
 
     //iphone xr screen
     @media only screen and (max-width: 400px)
