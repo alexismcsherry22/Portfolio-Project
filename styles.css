@@ -45,9 +45,8 @@
 }
 .container__image {
   margin-top: 10px;
-  height: 50%;
-  width: 35%;
-  border: 2px solid black;
+  width: 20%;
+  border: 2px solid white;
 }
 .container__header {
   margin-top: 5px;
@@ -269,9 +268,6 @@ main {
 
 .skill-description-box {
   background-color: rgb(63, 114, 175);
-  position: absolute;
-  bottom: 0;
-  width: 98%;
   margin: 4.5px;
 }
 .skill-description-box__section {
